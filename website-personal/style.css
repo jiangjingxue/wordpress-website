@@ -1,0 +1,1131 @@
+/* /*
+Theme Name: Sway
+Author: Jiang Jingxue
+Author URI: https://www.youtube.com
+Description: Sway is a projects-orinted theme for professionals 
+Version: 0.0
+*/ 
+
+@import url(https://db.onlinewebfonts.com/c/c7359a8e5b409a707f8ec3644f7b6b9e?family=Museo+Slab+500+Regular+Webfont);
+@import url('https://fonts.cdnfonts.com/css/museo?styles=43875');
+@import url('https://db.onlinewebfonts.com/c/7de6a6e9982be295124e47cc7b5249f1?family=Museo+100+Regular');
+@import url('https://db.onlinewebfonts.com/c/56ee0a3bf4422be57bbc6f8a76bd68c9?family=Caros+Bold');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*navbar*/ 
+ /* .master {
+    background-color:#efefef;
+} */
+
+.site-nav{
+    background-color:#181516;
+    border-radius: 10px;
+}
+
+.navbar a.site-title{
+    color: #efefef !important;
+    font-family: "Museo Slab 500 Regular Webfont";
+    font-weight: bold;
+    font-size:200%
+}
+
+.navbar-mode{
+    color: #efefef;
+    border-width: 1.5px;
+    border-color: #efefef !important;
+    font-weight:600;
+
+}
+
+.navbar-mode:hover{
+    background-color: #FF2400;
+    border-color: #FF2400 !important;
+    color: #E1C16E !important;
+    /* transition: all 0.1s ease-in-out; */
+}
+
+.site-links a.nav-link{
+    color: #efefef !important;
+    /* color: #6f777d !important; */
+    font-weight:600;
+}
+
+.site-nav a:hover {
+    color: #E1C16E !important;
+}
+
+.site-nav .site-links a{
+    position:relative;
+}
+
+.site-nav .site-links a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    height: 3px;
+    background: #E1C16E;
+    width: 100%;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    -webkit-transform: scaleX(0) translate3d(0, 0, 0);
+    transform:scaleX(0) translate3d(0, 0, 0)
+}
+
+.site-nav .site-links a:hover:before {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform:scaleX(1)
+}
+
+/*collpased navbar menu*/ 
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.nav-link {
+    display: inline-flex;
+}
+
+
+/* home page section*/
+.wave-section{
+    height:330px;
+}
+
+.container-fluid.wave-text-container{
+    height:330px;
+    background-image: url(./assets/images/white-stripe.jpg);
+    background-size: cover;
+}
+
+.main-content-section
+{
+    /* background:#efece4 !important; */
+    /* background:#f0ede3 !important;  */
+    /* background:#ccd6e0 !important;  */
+    background-color:#efefef; 
+}
+
+
+
+.wave-body{
+    position:relative;
+}
+
+.wave-text-container{
+    z-index:1;
+}
+
+#silver-waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+}
+
+.headline{
+    padding-left:5rem;
+}
+.headline-name{
+    font-family: "Museo Slab 500 Regular Webfont" !important;
+    color:black;
+}
+
+.headline-title{
+    font-size: 130%;
+    color:black;
+}
+
+.vision-statement{
+    font-family: "Caros Bold";
+    color:#022d36;
+    font-size:130%;
+}
+
+.bg-image{
+    position: relative;
+    margin-bottom: 5em;
+    clear: both;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-animation: intro 0.3s both;
+    animation: intro 0.3s both;
+    -webkit-animation-delay: 0.25s;
+    animation-delay:0.25s
+}
+
+
+
+
+.author-headshot img {
+    border-radius: 50%;
+}
+
+.author-headshot-project img{
+    border-radius: 50%;
+}
+
+.author-content {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 120%;
+    color: #53595e;
+}
+
+.author-urls-wrapper {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-size:90%;
+}
+
+.author-urls{
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+.author-urls li{
+    padding-bottom: 0.5rem;
+}
+.author-urls a:hover {
+    text-decoration:underline !important;
+}
+
+.label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* connect page*/ 
+.initial-content-connect{
+    background:#efefef !important;
+}
+
+
+.text-block h1{
+    font-family: "Caros Bold";
+    font-size:500%;
+}
+
+.text-block p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:120%;
+    font-weight:lighter;
+}
+
+.corner-wrapper {
+    display: block;
+    overflow: hidden;
+    border-radius: 30px;
+    transform: translateZ(0px);
+    border: 0px solid black;
+}
+
+
+/*project page:general*/
+
+.initial-content-projects{
+    /* background:#ccd6e0 !important;  */
+
+    background:#efefef;
+    height:100%;
+}
+
+.sticky-offset {
+    top: 6rem;
+}
+
+.sticky-offset-more{
+    top:122px;
+}
+
+
+.category-list{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-list li{
+    display: inline-block;
+}
+
+.category-list a.category-button{
+    margin-right: 15px;
+    font-family: 'Museo', sans-serif;
+}
+
+
+.category-list a.category-button.active-button,
+.category-list a.category-button:hover{
+    color:#f24723 !important;
+    transition: all 0.4s ease-in-out;
+}
+
+.category-list a.category-button{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.category-list a.category-button{
+    color: #9d9d9d !important;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.inner-section h1.project-page-title{
+    font-family: "Museo Slab 500 Regular Webfont" !important;
+}
+
+.project-title h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:normal;
+    font-size:160%;
+    color: #dc322f;
+}
+
+.project-subtitle p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:100%;
+    font-weight:400;
+}
+
+.project-description p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 95%;
+    padding-top:10px;
+}
+
+.btn-info, btn-info:focus, btn-info:active,btn-info:disabled{
+    background-color: #d9ff42 !important;
+    border-color:#dadada !important;
+}
+
+.btn-primary, btn-primary:focus, btn-primary:active,btn-primary:disabled{
+    border-color:#dadada !important;
+}
+
+.btn-info:hover {
+    background-color: #bbe124 !important;
+    border-color:#bbe124 !important;
+}
+
+
+.btn-secondary, btn-secondary:focus, btn-secondary:active, .btn-secondary:hover {
+    border-color:white !important;
+}
+
+.btn-sm {
+    font-weight:500;
+}
+
+.btn-lg{
+    font-family: "Museo Slab 500 Regular Webfont";
+}
+
+
+/*visual*/
+
+/* .inner-section{
+    background:white;
+    border-radius: 30px;
+    height:200vh;
+    height:100%;
+} */
+
+.inner-content{
+    background:white;
+    border-radius: 30px;
+}
+
+/*project page: readme page general*/
+a.table-of-content{
+    font-size:120%;
+    font-weight:600;
+    letter-spacing: .6px;
+}
+
+a.table-heading{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+
+a.table-heading:hover{
+    /* color: rgba(0, 0, 0, 0.85); */
+    background-color:rgba(120, 120, 120, 0.1);
+}
+
+h2.scroll-heading {
+    scroll-margin-top: 7.5vw;
+}
+
+.list-unstyled.table-of-content{
+    border: 1px solid black;
+}
+
+/*project page:coverage*/
+
+.background-coverage{
+    background-image: url(./assets/images/coverage/coverage-sofa-5.png);
+    background-size: cover;
+    border-radius: 30px;
+    opacity:1;
+}
+/*project page:frontier*/
+
+.background-frontier{
+    background-image: url(./assets/images/frontier/roomba-view-169-low.jpg);
+    background-size: cover;
+    border-radius: 30px;
+    opacity:1;
+}
+.video-container video{
+    border-radius: 30px;
+}
+
+.video-container {
+    opacity:0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.video-container:hover{
+    opacity:1;
+
+}
+
+
+
+/* .video-container{
+    background-image: url(./assets/images/frontier/roomba-view-169-low.jpg);
+    background-size: cover;
+    border-radius:30px;
+    transition: transform 0.8s;   
+} */
+
+/* .video-container:hover {
+    background-image: none; 
+    transform: scale(1.05);
+} */
+
+
+/* .video-container:hover video{
+} */
+
+/*card blurry effect*/
+/* .cards-container{
+    transition: all 1.0s ease-in-out;
+}
+
+.cards-container:hover >.row:not(:hover){
+    filter:blur(1px);
+    transition: all 0.5s ease-in-out;
+    opacity: 0.5;
+} */
+
+/*project page:semantic*/
+
+.background-semantic {
+    background-image:url(./assets/images/semantic/unity_girl_raw.png);
+    background-size: cover;
+    border-radius: 30px;
+    transition: all 0.4s ease-in-out;
+}
+
+/* .background-semantic:hover{
+    background-image:none;
+} */
+
+/* .background:hover{
+    transform: scale(1.05);
+} */
+
+.image-alternative-fast{
+    opacity:1;
+    transition-duration: 0.4s;
+}
+
+.image-alternative-fast:hover{
+    opacity:0;
+}
+
+.image-alternative{
+    border-radius: 30px;;
+    opacity:1;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.image-alternative:hover{
+    opacity:0;
+}
+
+/*project page:dubins*/
+.background-dubins {
+    background-image:url(./assets/images/dubins/dubins-RSR-best.png);
+    background-size: cover;
+    border-radius: 30px;;
+    /* transition: transform 0.3s ease-in-out; */
+}
+
+/*project page: autodrive*/
+.background-autodrive{
+    background-image: url(./assets/images/controls/chevy.png);
+    background-size:contain;
+    border-radius: 30px;
+    opacity:1;
+}
+
+/*project page: robot vacuum*/
+.background-cyrus{
+    background-image:url(./assets/images/cyrus/robot-front.jpg);
+    background-size: contain;
+    border-radius: 30px;;
+}
+
+
+/*project page: mpc*/
+.background-mpc{
+    background-image:url(./assets/images/mpc/mpcpath6.jpg);
+    background-size:cover;
+    border-radius: 30px;
+}
+
+/*project page: mpctuner*/
+.background-mpctuner{
+    background-image: url(./assets/images/mpc/mpctunermat.png);
+    background-size:cover;
+    border-radius: 30px;
+}
+
+
+.background-web{
+    background-image:url(./assets/images/web-green1.png);
+    background-size:cover;
+    border-radius: 30px;
+}
+
+.background-voronoi{
+    background-image:url(./assets/images/voronoi/foundry-voronoi.png);
+    background-size:contain;
+    border-radius: 30px;
+}
+
+
+/*tutorial page: menu bar*/
+.tutorial-menu .tutorial-menu-content {
+    width: 100%;
+    height: calc(100vh - 7rem);
+    overflow-y: auto;
+}
+
+.tut-links {
+    overflow: auto;
+}
+
+.tut-links a {
+    padding: .1875rem .5rem;
+    /* margin-top: .125rem;
+    margin-left: 1.25rem; */
+    color:black;
+    text-decoration:none
+}
+
+.tut-links a.section-title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+}
+.tut-links a.section-home{
+    color: #0000cd !important;
+}
+
+.tut-links a.section-sub {
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tut-links a.section-sub:hover, .tut-links a.section-sub:focus {
+    /* color: rgba(0, 0, 0, 0.85); */
+    background-color:rgba(120, 120, 120, 0.1);
+    color: red;
+}
+
+/*tutorial page middle page*/
+
+/* .tutorial-page .markdown{
+    width: 100%;
+    height: calc(100vh - 7rem);
+    overflow-y: auto;
+} */
+
+.tt-main{
+    width: 100%;
+    height: calc(100vh - 7rem);
+    overflow-y: auto;
+}
+
+.tutorial-toc .tutorial-toc-content{
+    position: fixed;
+    width: 16rem;
+    overflow-x: hidden;
+    overflow-y:auto
+}
+
+/*tutorial page: right scroll bar*/
+.tutorial-toc-content .navbar .nav a{
+    border-radius:10px;
+    color:black !important;
+    font-weight: 400 !important;
+}
+
+.tutorial-toc-content .navbar .nav a:hover{
+    background-color:rgba(121, 82, 179, 0.1);
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+/*frontier page code block*/
+.ui-tabs .ui-tabs-nav{
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom: 1px !important;
+    border: 1px solid #f3f3f3 !important;
+    padding:0 !important;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .625rem;
+    font-weight: 500;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    cursor: default;
+    transition: box-shadow 150ms;
+    margin-top: 23px;
+    margin-bottom: 0;
+}
+
+.ui-tabs .ui-tabs-nav li{
+    list-style: none;
+    float:left;
+    position:relative;
+    top:0;
+    margin: 1px 0.2em 0 0;
+    border: 0 !important;
+    padding: 1.48em 1.8em !important;
+    white-space: nowrap;
+}
+
+.ui-tabs-active {
+    background-color: #fff !important;
+    border-bottom: 0 !important;
+    box-shadow: inset 0 -2px #FF2400;
+    cursor: default !important;
+}
+.ui-tabs-active a{
+    color:#FF2400 !important;
+    cursor: default !important;
+    opacity: 1;
+}
+
+.ui-tabs-tab a{
+    border-bottom: 0 !important;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+code{
+    font-size:.87em;
+    line-height: 21px;
+    color: #37474f!important;
+    letter-spacing:.05px;
+
+}
+pre,code{
+    font-family:monospace;
+}
+
+pre{
+    font-size: 1em;
+    overflow-x: auto;
+    white-space: pre-line;
+    display:block;
+}
+
+code{
+    white-space: normal;
+}
+
+
+.markdown h3{
+    font-size: 20.5px;
+    /* text-transform: uppercase; */
+    border-bottom: 1px solid #d9d8d6;
+    letter-spacing: 1.2px;
+}
+
+/*cyrus project page: show/hidden div*/
+.hiddenDiv {
+    display: none;
+}
+
+
+
+
+
+/* footer section*/
+.footer-section{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* old project card hover blur effect*/ 
+/* .container.projectlist {
+    margin-bottom: 8em;
+}
+
+
+.container_cards:hover .card {
+    filter: blur(5px);
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+
+.container_cards .card:hover {
+    border-color:firebrick !important;
+    filter: blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.card-img-top {
+    object-fit:cover;
+}  */
+
+
+/*---------Media Queries----------*/
+
+/*Small devices (landscape phones, less than 768px)*/
+
+    @media (max-width:767.98px){
+
+        /*navbar padding*/
+        .navbar{
+            padding: 0 !important;
+        }
+        .wave-text-container{
+            padding-left:1rem !important;
+            padding-right:1rem !important;
+        }
+        .main-container{
+            padding-left:1rem !important;
+            padding-right:1rem !important;
+        }
+
+        /*site-title font resizing*/
+        .site-title{
+            font-size:120% !important
+        }
+
+        /*mode font size resizing*/
+        .navbar-mode{
+            font-size:80% !important;
+        }
+
+
+        /*headline font sizing*/
+        .headline-name{
+            font-size:200% !important;
+        }
+        
+        .headline-title{
+            font-size: 110% !important ;
+        }
+
+        /*headline AND vision statement spacing*/
+        .headline-col-2{
+            justify-content: start !important;
+        }
+
+        /*spacing between navbar items*/
+        .nav-link{
+            font-size: 95% !important;
+        }
+
+        /*vision statement sizing*/
+        .vision-statement{
+            font-family: "Caros Bold";
+            font-size:95%;
+        }
+
+        /*main section padding*/
+        .main-content-section{
+            padding:0 !important;
+        }
+        .initial-content{
+            padding:0 !important;
+        }
+        .content-section{
+            padding:0 !important;
+        }
+
+        /*headshot padding*/
+
+        .author-headshot{
+            display:table-cell;
+            vertical-align: top;
+            width:67px;
+            height:67px;
+            padding-bottom:6rem !important;
+            padding-top:2rem !important;
+
+        }
+
+        .author-headshot-project img{
+            display:none;
+        }
+
+        .author-content {
+            display: none;
+        }
+    
+        .author-urls-wrapper{
+            display: none;
+        }
+
+        /*top navbar spacing*/
+        .master-inner{
+            padding:0 !important;
+        }
+
+        /*headline spacing*/
+        .headline{
+            padding: 2rem !important;
+        }
+
+        /*connect page: top spacing*/
+        .initial-content-connect{
+            padding:1rem !important;
+        }
+
+        /*home page: button sizing*/
+        .btn-lg{
+            font-size:90%;
+        }
+
+        /*project page: title spacing*/
+        .initial-content-projects{
+            padding-top: 0 !important;
+            padding-bottom:1rem !important;
+        }
+
+        /*project page:title resizing*/
+        .project-page-title{
+            font-size: 150%;
+        }
+
+        /* project page: navbar spacing*/
+        .project-navigation-bar{
+            margin-top: 0 !important;
+            margin-bottom: 1rem !important;
+        }
+
+        /*project page: navigation bar font resizing*/
+        .category-list a.category-button{
+            font-weight: 400;
+            font-style: normal;
+            text-transform: capitalize;
+            font-size: 12px;
+        }
+
+        /*project page: inner-content padding*/
+        .inner-content{
+            padding: 1rem !important;
+        }
+
+        /*project page: project titles and subtitles resizing*/
+        .project-title h2{
+            font-size:140%;
+        }
+        
+        .project-subtitle p{
+            font-size:95%;
+        }
+        
+        .project-description p{
+            font-size:80% !important;
+        }
+
+        /*project page: button resizing*/
+        .btn-sm{
+            font-size:75% !important;
+        }
+
+        /*project page: button padding*/
+        .project-left-buttons{
+            padding-bottom: 2rem;
+        }
+
+        .project-right-buttons{
+            padding-bottom: 0.5rem;
+        }
+
+
+        /*project page: projects column gap*/
+        .proj1, .proj2, .proj3, .proj4 , .proj5 , .proj6, .proj7, .proj8, .proj9{
+            margin-bottom: 0 !important;
+            gap: 1rem;
+        }
+
+        .proj-right-img{
+            margin-bottom: 2rem;
+        }
+
+        /*frontier page: table of content resisizing*/
+        .table-of-content{
+            font-size:80% !important;
+        }
+        .table-heading{
+            font-size:80% !important;
+        }
+
+        /* project page padding: start and end padding*/
+        .page-padding{
+            padding-left: 0.5rem !important;
+            padding-right: 0.5rem !important;
+        }
+
+        .article-padding{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        .markdwon h2{
+            font-size: 20.5px;
+        }
+        .markdown h3{
+            font-size: 16.5px;
+        }
+
+        .mathJax{
+            font-size: 80%;
+        }
+
+
+        
+
+
+
+
+
+        
+
+
+
+    .container-fluid.text-wrapper h1{
+        font-family: "Museo 100 Regular";
+    }
+
+    .container-fluid.text-wrapper p{
+        font-size:95%;
+    }
+
+    .text-block h1{
+        font-family: "Caros Bold";
+        font-size:300%;
+    }
+    
+    .text-block p{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size:95%;
+    }
+
+    .container-contactme{
+        padding-top:15px;
+    }
+
+    .fa-brands.fa-github{
+        font-size:26px;
+    }
+
+    .fa-regular.fa-envelope{
+        font-size:26px;
+    }
+
+    .fa-brands.fa-linkedin-in{
+        font-size:26px;
+    }
+
+    .fa-brands.fa-instagram{
+        font-size:26px;
+    }
+
+    .social-icons{
+        padding:0 !important;
+    }
+
+    /* headshot sizing*/
+    .author-headshot{
+        display:table-cell;
+        vertical-align: top;
+        width:67px;
+        height:67px;
+        padding-bottom:6rem !important;
+        padding-top:2rem !important;
+
+    }
+
+    .author-headshot-project img{
+        display:none;
+    }
+
+    .author-content {
+        display: none;
+    }
+
+    .author-urls-wrapper{
+        display: none;
+    }
+}
+
+
+
+
+
+  /* Medium devices and less (tablets, less than 992px) */
+  @media (max-width: 991.98px) {
+    .card-img-top {
+        height: 70vw;
+        min-height:210px;
+    }
+
+    h1, .h1 {
+        font-size: 25px;
+    }
+    
+    h2, .h2 {
+        font-size: 95%;
+    }
+    
+    h3, .h3 {
+        font-size: 92%;
+    }
+
+    h4, .h4 {
+        font-size: 95%;
+    }
+
+    h5, .h5 {
+        font-size: 95%;
+    }
+
+    p, .p{
+        font-size: 90%;
+    }
+
+    .lead {
+        font-size:95%;
+    }
+
+
+    .list-group {
+        font-size: 80%;
+    }
+
+    .container-fluid.text-wrapper {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    .main {
+        padding-left: 0;
+        padding-right: 0;
+    }
+} 
+  /* Large devices and up (desktops, 992px and up) */
+  @media (min-width: 992px){
+
+    .left-aligned-container{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .card-img-top {
+        height: 17vw;
+    }
+  }
+
+
+/* .modal-header {
+    background-color: #022b3e;
+}
+
+.modal-title {
+    color: greenyellow;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bold;
+} */
+
+.modal-title-description {
+    color:#fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.modal_paragraph_font {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+th{
+    font-weight: normal;
+    font-size:small;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+td{
+    font-size:smaller;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%); 
+    height: 33%;
+    top: 33%;
+    
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+table.table-fit {
+    width: auto !important;
+    table-layout: auto !important;
+  }
+  
+  table.table-fit thead th,
+  table.table-fit tbody td,
+  table.table-fit tfoot th,
+  table.table-fit tfoot td {
+    width: auto !important;
+}
+
+.txt {
+    color: #fff;
+    font-size: 4rem;
+    text-shadow: 0 0 10px #000;
+  }
+
